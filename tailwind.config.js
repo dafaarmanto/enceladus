@@ -10,6 +10,9 @@ module.exports = {
         'quicksand': ['Quicksand', 'sans-serif']
       }
     },
+    screens: {
+      'videoSm': {'min': '400px', 'max': '767px'},
+    }
   },
   plugins: [],
 }

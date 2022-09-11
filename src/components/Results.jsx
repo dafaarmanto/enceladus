@@ -125,12 +125,12 @@ export default function Results() {
             {results.map((video, index) => (
               <>
                 <div key={index} className="p-2 mb-3 mt-5">
-                  <div className='flex flex-row'>
+                  <div className='flex flex-row videoSm:flex-col'>
                     {
                       video?.additional_links?.[0]?.href && 
                       <>
                         <ReactPlayer url={video.additional_links?.[0].href} controls width={355} height={200} />
-                        <a href={video.link} target="_blank" rel="noreferrer" className='font-quicksand font-bold ml-4 hover:underline'>
+                        <a href={video.link} target="_blank" rel="noreferrer" className='font-quicksand font-bold ml-4 videoSm:mt-3 hover:underline'>
                           <p className="text-xl mb-3 dark:text-blue-300 text-blue-700">
                             {video.title}
                           </p>
