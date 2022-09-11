@@ -121,7 +121,7 @@ export default function Results() {
         )
       } else {
         return (
-          <div className="w-full justify-center items-center">
+          <div className="w-full justify-center items-center laptop:px-56">
             {results.map((video, index) => (
               <>
                 <div key={index} className="p-2 mb-3 mt-5">
