@@ -37,7 +37,7 @@ export default function Results() {
         )
       } else {
         return (
-          <div className='flex flex-col justify-between space-y-8 sm:px-56'>
+          <div className='flex flex-col justify-between space-y-8 laptop:px-56'>
             <p className='font-quicksand font-medium'>About {results.length} results</p>
             {currentResults?.map(({ link, title, description }, index) => (
               <div key={index} className="w-full mt-5">
@@ -88,7 +88,7 @@ export default function Results() {
       } else {
         return (
           <>
-            <div className='flex flex-wrap justify-between space-y-8 sm:px-56'>
+            <div className='flex flex-wrap justify-between space-y-8 laptop:px-56'>
             <p className='font-quicksand font-medium'>About {results.length} results</p>
             {currentResults?.map(({ links, id, source, title, published, summary }) => (
               <div key={id} className="w-full mt-5">

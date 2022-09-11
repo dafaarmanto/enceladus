@@ -12,6 +12,7 @@ module.exports = {
     },
     screens: {
       'videoSm': {'min': '400px', 'max': '767px'},
+      'laptop': '1024px'
     }
   },
   plugins: [],
