@@ -43,7 +43,7 @@ export default function Results() {
               <div key={index} className="w-full mt-5">
                 <a href={link} target="_blank" rel="noreferrer">
                   <p className='text-sm'>
-                    {link.length > 60 ? link.substring(0, 60) : link}
+                    {link?.length > 60 ? link.substring(0, 60) : link}
                   </p>
                   <p className="text-2xl my-2 font-quicksand font-semibold hover:underline dark:text-blue-300 text-blue-700">
                     {title}
